@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Container, Stack,Text} from '@chakra-ui/react'
+import { Box, Heading, Image, Container, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
@@ -25,14 +25,17 @@ const Home = () => {
       <MyCarousel />
       <Container maxW={"5xl"} minH={"100vh"} padding={"16"}>
         <Heading textTransform={"uppercase"} w={"fit-content"} py={"4"} borderBottom={"2px solid"} m={"auto"}>Services</Heading>
-        
+
         <Stack direction={["column", "row"]} alignItems={"center"} p={"4"}>
-          <Image src={img5} h={["48","xs"]} filter={"hue-rotate(-130deg)"}/>
-          <Text letterSpacing={'widest'} lineHeight={"150%"} p={["4","16"]} textAlign={"center"}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus magnam obcaecati quod porro iusto laboriosam ea neque, tempore voluptate officia labore, dolorum perferendis placeat illo quidem saepe accusamus aut.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae amet architecto nemo qui molestias fuga modi, atque sequi ipsa ad quasi accusamus earum eos exercitationem eveniet quo vel voluptatem!
-            Laborum autem incidunt qui vel ad aperiam quam, veritatis ducimus aliquam at quisquam laboriosam saepe temporibus eum nemo fugiat ullam, repudiandae perferendis possimus quasi perspiciatis, architecto est delectus.
-            </Text>
+          <Image src={img5} h={["48", "xs"]} filter={"hue-rotate(-130deg)"} />
+          <Text letterSpacing={'widest'} lineHeight={"150%"} p={["4", "16"]} textAlign={"center"}>
+            At Streamora, we make it easy for you to enjoy and share video content.Here’s what you can do: <br/>
+              Stream a wide range of videos directly in your browser — no downloads needed. <br/>
+              Share your own videos with the world using our simple upload feature. <br/>
+              Create an account or log in to personalize your streaming experience. <br/> 
+              Enjoy a smooth and responsive experience whether you're on mobile, tablet, or desktop.
+     
+          </Text>
         </Stack>
       </Container>
     </Box>

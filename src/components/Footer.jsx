@@ -1,4 +1,4 @@
-import { Box, Stack, VStack, Heading, HStack, Button, Input, Text, Tooltip } from '@chakra-ui/react'
+import { Box, Stack, VStack, Heading, HStack, Button, Input, Text,} from '@chakra-ui/react'
 import React from 'react'
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillYoutube, AiOutlineSend } from 'react-icons/ai'
 import { Link } from 'react-router'

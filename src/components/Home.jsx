@@ -1,0 +1,70 @@
+import { Box, Heading, Image, Container, Stack,Text} from '@chakra-ui/react'
+import React from 'react'
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import img1 from "../assets/1.jpg"
+import img2 from "../assets/2.jpg"
+import img3 from "../assets/3 (1).jpg"
+import img4 from "../assets/4 (1).jpg"
+import img5 from "../assets/5.png"
+
+
+const headingOptions = {
+  pos: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%,-50%)",
+  textTransform: "uppercase",
+  p: "4",
+  size: "4xl"
+}
+
+const Home = () => {
+  return (
+    <Box>
+      <MyCarousel />
+      <Container maxW={"5xl"} minH={"100vh"} padding={"16"}>
+        <Heading textTransform={"uppercase"} w={"fit-content"} py={"4"} borderBottom={"2px solid"} m={"auto"}>Services</Heading>
+        
+        <Stack direction={["column", "row"]} alignItems={"center"} p={"4"}>
+          <Image src={img5} h={["48","xs"]} filter={"hue-rotate(-130deg)"}/>
+          <Text letterSpacing={'widest'} lineHeight={"150%"} p={["4","16"]} textAlign={"center"}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus magnam obcaecati quod porro iusto laboriosam ea neque, tempore voluptate officia labore, dolorum perferendis placeat illo quidem saepe accusamus aut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae amet architecto nemo qui molestias fuga modi, atque sequi ipsa ad quasi accusamus earum eos exercitationem eveniet quo vel voluptatem!
+            Laborum autem incidunt qui vel ad aperiam quam, veritatis ducimus aliquam at quisquam laboriosam saepe temporibus eum nemo fugiat ullam, repudiandae perferendis possimus quasi perspiciatis, architecto est delectus.
+            </Text>
+        </Stack>
+      </Container>
+    </Box>
+  )
+}
+
+const MyCarousel = () => {
+
+  return (
+    <Carousel autoPlay infiniteLoop interval={1000} showThumbs={false} showStatus={false} showArrows={false}>
+
+      <Box w={"full"} h={"100vh"}>
+        <Image src={img1} alt="img" />
+        <Heading bgColor={"blackAlpha.600"} color={"white"} {...headingOptions} >Watch the Future</Heading>
+      </Box>
+
+      <Box w={"full"} h={"100vh"}>
+        <Image src={img2} alt="img" />
+        <Heading bgColor={"whiteAlpha.900"} color={"black"} {...headingOptions}  >Future is Gaming</Heading>
+      </Box>
+
+      <Box w={"full"} h={"100vh"}>
+        <Image src={img3} alt="img" />
+        <Heading bgColor={"whiteAlpha.600"} color={"black"} {...headingOptions}  >Gaming on Console</Heading>
+      </Box>
+
+      <Box w={"full"} h={"100vh"}>
+        <Image src={img4} alt="img" />
+        <Heading bgColor={"whiteAlpha.600"} color={"black"} {...headingOptions}  >Night life is cool</Heading>
+      </Box>
+
+    </Carousel>
+  )
+}
+export default Home
